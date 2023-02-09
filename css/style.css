@@ -175,25 +175,16 @@ cursor: pointer;
     margin: 0;
     padding: 0;
 }
-.section-one-li::before {
-    display: block;
-    content: '';
+.section-one-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 112px;
-    background-repeat: no-repeat;
-    background-position: center;
     background-color: var(--btn-bg-color);
 }
-.strategy::before {
-    background-image: url('../images/antenna.svg');
-}
-.punctuality::before {
-    background-image: url('../images/clock.svg');
-}
-.diligence::before {
-    background-image: url('../images/diagram.svg');
-}
-.technologies::before {
-    background-image: url('../images/astronaut.svg');
+.section-one-svg {
+    width: 64px;
+    height: 64px;
 }
 .section-title {
     margin-top: 0;
@@ -310,43 +301,45 @@ text-decoration: none;
 font-size: 16px;
 line-height: 1.5;
 }
+.foot-container {
+    display: flex;
+    align-items: baseline;
+}
+.logo-foot {
+    margin-right: 120px;
+}
+.foot-social {
+    display: flex;
+    flex-direction: column;
+}
 .social-text {
     color: #FFFFFF;
-    text-align: start;
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
+    letter-spacing: 0.02em;
+    margin: 0;
+    margin-bottom: 16px;
 }
 .social {
     display: flex;
+    gap: 16px;
     padding: 0;
     margin: 0;
-    list-style: none;
 }
-/* .social a {
-    display: block;
+.social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
     width: 40px;
     height: 40px;
-    padding: 0;
-    border: none;
-    order: 1;
-    flex-grow: 0;
-    cursor: pointer;
-} */
-/* .social .insta {
-background-image: url('../images/instagram.svg');
+    background: rgba(255, 255, 255, 0.1);
 }
-.social .twiterr {
-    background-image: url('../images/twitter.svg');
+.social-link:hover,
+.social-link:focus {
+    background-color: var(--success);
 }
-.social .facebook {
-    background-image: url('../images/facebook.svg');
-}
-.social .linkedin {
-    background-image: url('../images/linkedin.svg');
-} */
 /* Portfolio */
 .portfolio-section {
     padding-top: 96px;
