@@ -329,6 +329,17 @@ margin-bottom: 8px;
     width: 100%;
     border: 1px solid rgba(142,143,153,1);
     border-radius: 4px;
+} 
+.company-icon {
+    fill: var(--subtle-text);
+}
+.customers-link:hover,
+.customers-link:focus {
+    border: 1px solid var(--btn-bg-color-active);
+}
+.company-icon:hover,
+.company-icon:focus {
+    fill: var(--btn-bg-color-active);
 }
 .footer {
     padding-top: 100px;
